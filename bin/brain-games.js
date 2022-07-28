@@ -1,7 +1,5 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
+import exportName from '../src/cii.js';
 
-console.log('Welcome to the Brain Games!'); 
-const name = readlineSync.question('Text your name: ');
-const resultName = `Hello, ${name}`;
-console.log(resultName);
+exportName();
+console.log('Welcome to the Brain Games!');
