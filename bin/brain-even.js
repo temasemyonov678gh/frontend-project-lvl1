@@ -19,7 +19,7 @@ const game = () => {
         console.log('Correct!');
         result += 1;
         } else {
-            console.log('Reag game instruction!');
+            console.log('Read game instruction!');
             break
         }
     }
