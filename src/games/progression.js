@@ -15,13 +15,13 @@ const generateProgression = () => {
 
 const brainProgression = () => {
     console.log('What number is missing in the progression?');
+    let count = 0;
     for (let i = 1; i <= 3; i += 1) {
         const progression = generateProgression();
         const changeNumber = randomNum10();
         const result = progression[changeNumber];
         progression[changeNumber] = '..';
         let question = '';
-        let count = 0;
         for (const number of progression) {
             question += number + ' ';
         }
@@ -37,6 +37,9 @@ const brainProgression = () => {
             console.log(`${answer} is wrong answer ;(. Correct answer was ${result}.\nLet's try again, ${userName}!`);
             break;
         }
+    }
+    if (count === 3) {
+        console.log(`Congratulations, ${userName}!`);
     }
 };
 
