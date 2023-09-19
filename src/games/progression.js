@@ -27,7 +27,7 @@ const brainProgression = () => {
         }
         const answer = readlineSync.question(`Question: ${question}\nYour answer: `);
         if (isNaN(Number(answer))) {
-            console.log(`Read game instruction!`);
+            console.log('Read game instruction!');
             break;
         }
         if (Number(result) === Number(answer)) {

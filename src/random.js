@@ -17,4 +17,4 @@ const randomNum10 = () => {
     return number;
 };
 
-export {randomNum, randomOperator, randomNum10};
+export { randomNum, randomOperator, randomNum10 };

@@ -5,16 +5,15 @@ import { randomNum } from '../random.js';
 const gcd = (operand1, operand2) => {
     let a = operand1;
     let b = operand2;
-    let gcd;
     while (a !== b) {
         if (a > b) {
-            a = a - b;
+            a -= b;
         } else {
-            b = b - a;
+            b -= a;
         }
     }
-    gcd = a;
-    return gcd;
+    const GCD = a;
+    return GCD;
 };
 
 const brainGcd = () => {
@@ -26,7 +25,7 @@ const brainGcd = () => {
         const result = gcd(operand1, operand2);
         const answer = readlineSync.question(`Question: ${operand1} ${operand2}\nYour answer: `);
         if (isNaN(Number(answer))) {
-            console.log(`Read game instruction!`);
+            console.log('Read game instruction!');
             break;
         }
         if (result === Number(answer)) {

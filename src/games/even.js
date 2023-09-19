@@ -16,8 +16,8 @@ const brainEven = () => {
             break;
         }
         if (question === 'yes' || question === 'no') {
-        console.log('Correct!');
-        result += 1;
+            console.log('Correct!');
+            result += 1;
         } else {
             console.log('Read game instruction!');
             break;

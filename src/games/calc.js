@@ -17,13 +17,13 @@ const brainCalc = () => {
         if (operator === '+') {
             result = operand1 + operand2;
             answer = readlineSync.question(`Question: ${operand1} + ${operand2}\nYour answer: `);
-        } 
+        }
         if (operator === '-') {
             result = operand1 - operand2;
             answer = readlineSync.question(`Question: ${operand1} - ${operand2}\nYour answer: `);
         }
         if (isNaN(Number(answer))) {
-            console.log(`Read game instruction!`);
+            console.log('Read game instruction!');
             break;
         }
         if (result === Number(answer)) {
@@ -33,7 +33,6 @@ const brainCalc = () => {
             console.log(`${answer} is wrong answer ;(. Correct answer was ${result}.\nLet's try again, ${userName}!`);
             break;
         }
-        
     }
     if (count === 3) {
         console.log(`Congratulations, ${userName}!`);
