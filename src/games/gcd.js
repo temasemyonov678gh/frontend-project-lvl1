@@ -24,7 +24,7 @@ const brainGcd = () => {
     const operand2 = randomNum();
     const result = gcd(operand1, operand2);
     const answer = readlineSync.question(`Question: ${operand1} ${operand2}\nYour answer: `);
-    if (isNaN(Number(answer))) {
+    if (Number.isNaN(Number(answer))) {
       console.log('Read game instruction!');
       break;
     }

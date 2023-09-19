@@ -22,11 +22,12 @@ const brainProgression = () => {
     const result = progression[changeNumber];
     progression[changeNumber] = '..';
     let question = '';
+    /* eslint-disable-next-line */
     for (const number of progression) {
       question += `${number} `;
     }
     const answer = readlineSync.question(`Question: ${question}\nYour answer: `);
-    if (isNaN(Number(answer))) {
+    if (Number.isNaN(Number(answer))) {
       console.log('Read game instruction!');
       break;
     }

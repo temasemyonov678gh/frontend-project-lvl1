@@ -22,7 +22,7 @@ const brainCalc = () => {
       result = operand1 - operand2;
       answer = readlineSync.question(`Question: ${operand1} - ${operand2}\nYour answer: `);
     }
-    if (isNaN(Number(answer))) {
+    if (Number.isNaN(Number(answer))) {
       console.log('Read game instruction!');
       break;
     }

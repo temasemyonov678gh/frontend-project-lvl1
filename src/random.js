@@ -4,13 +4,16 @@ const randomNum = () => {
 };
 const randomOperator = () => {
   const operator = Math.floor(Math.random() * 100);
+  const operators = ['-', '+', '*'];
+  let count = 0;
   if (operator < 33) {
-    return '-';
+    count = 0;
   } else if (operator > 66) {
-    return '+';
+    count = 1;
   } else {
-    return '*';
+    count = 2;
   }
+  return operators[count];
 };
 const randomNum10 = () => {
   const number = Math.floor(Math.random() * 10);
