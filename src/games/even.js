@@ -4,8 +4,8 @@ import { randomNum } from '../random.js';
 
 const brainEven = () => {
     let result = 0;
-    const randomNumber = randomNum();
     for (let i = 1; i <= 3; i += 1) {
+        const randomNumber = randomNum();
         const question = readlineSync.question(`Question: ${randomNumber} \nYour answer: `);
         if (randomNumber % 2 === 0 && question === 'no') {
             console.log(`'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${userName}!`);
