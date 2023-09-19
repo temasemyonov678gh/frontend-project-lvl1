@@ -1,5 +1,5 @@
 const randomNum = () => {
-    const number = Math.round(Math.random() * 100);
+    const number = Math.ceil(Math.random() * 100);
     return number;
 };
 const randomOperator = () => {
